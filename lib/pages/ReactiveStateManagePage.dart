@@ -23,7 +23,7 @@ class ReactiveStateManagePage extends StatelessWidget {
               // print("수정");
               return Text("${Get.find<CountControllerWithreactive>().count.value}", style: TextStyle(fontSize: 50));
             }),
-            TextButton(
+            ElevatedButton(
               onPressed: () {
                 Get.find<CountControllerWithreactive>().increase();
               },
@@ -32,7 +32,8 @@ class ReactiveStateManagePage extends StatelessWidget {
                 style: TextStyle(fontSize: 50),
               ),
             ),
-            TextButton(
+            SizedBox(height: 10,),
+            ElevatedButton(
               onPressed: () {
                 Get.find<CountControllerWithreactive>().putNumber(5);
               },
