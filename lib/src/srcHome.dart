@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:testgetx/dependencys/dependencys_manage_page.dart';
 import 'package:testgetx/pages/ReactiveStateManagePage.dart';
+import 'package:testgetx/pages/getService.dart';
 import 'package:testgetx/pages/nomal/first.dart';
 import 'package:testgetx/pages/simple_state.dart';
 
@@ -58,6 +59,17 @@ class HomeScreen extends StatelessWidget {
                   Get.to(DependencyManagePage());
                 },
                 child: Text("의존성 관리")),
+            ElevatedButton(
+                onPressed: () {
+                  Get.toNamed("/binding");
+                  // Get.to(DependencyManagePage());
+                },
+                child: Text("바인딩")),
+            ElevatedButton(
+                onPressed: () {
+                  Get.to(GetxServicePage());
+                },
+                child: Text("GetxService")),
           ],
         ),
       ),

@@ -13,11 +13,13 @@ class GetLazyPut extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(),
-      body: ElevatedButton(
-          onPressed: () {
-            Get.find<DependencyController>().incress();
-          },
-          child: Text("")),
+      body: Center(
+        child: ElevatedButton(
+            onPressed: () {
+              Get.find<DependencyController>().incress();
+            },
+            child: Text("")),
+      ),
     );
   }
 }
